@@ -44,7 +44,7 @@ st.markdown('<p class="tagline">Anonymous mid-semester feedback that closes the 
 # Trust indicators row
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    st.markdown("<div style='text-align: center; color: #F76900; font-size: 1.5rem; font-weight: bold;'>🔒</div><div style='text-align: center; color: #888; font-size: 0.85rem;'>Zero login</div>", unsafe_allow_html=True)
+   st.markdown("<div style='text-align: center; color: #F76900; font-size: 1.5rem; font-weight: bold;'>🔒</div><div style='text-align: center; color: #888; font-size: 0.85rem;'>SSO verified,<br>zero stored identity</div>", unsafe_allow_html=True)
 with col2:
     st.markdown("<div style='text-align: center; color: #F76900; font-size: 1.5rem; font-weight: bold;'>🤖</div><div style='text-align: center; color: #888; font-size: 0.85rem;'>AI-powered</div>", unsafe_allow_html=True)
 with col3:
@@ -77,7 +77,7 @@ with col3:
         st.switch_page("pages/3_Dean.py")
 
 st.markdown("---")
-st.caption("🔒 100% anonymous — no student login, no identity stored. Ever.")
+st.caption("🔒 Verified via SU Blackboard SSO · No student identity stored with feedback · Enrollment checked, anonymity preserved")
 
 # Footer
 st.markdown("---")

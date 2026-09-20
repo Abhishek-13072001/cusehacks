@@ -4,7 +4,7 @@ from utils.storage import save_feedback
 st.set_page_config(page_title="OrangeVoice - Student", page_icon="🎓", layout="centered")
 
 st.markdown("# 🎓 Student Feedback")
-st.caption("100% anonymous. No login. No tracking. No stored identity.")
+st.caption("Verified via SU Blackboard SSO. Your feedback is stored anonymously — no identifier ever linked to it.")
 
 if st.button("← Back to Home"):
     st.switch_page("app.py")
@@ -52,4 +52,4 @@ with st.form("feedback_form", clear_on_submit=True):
             """, unsafe_allow_html=True)
 
 st.markdown("---")
-st.info("💡 Your feedback will be grouped with others' and shown to your professor as anonymous themes — never as individual quotes traceable to you.")
+st.info("💡 **How anonymity works:** SU Blackboard SSO confirms you're enrolled in this course. Once verified, your feedback is stored without any identifier — just {course, feedback, cycle}. Your professor sees anonymous themes, never individual quotes traceable to you.")
