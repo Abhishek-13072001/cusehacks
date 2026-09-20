@@ -48,7 +48,13 @@ st.markdown("---")
 available_courses = get_all_courses()
 
 if not available_courses:
-    st.warning("📭 No feedback has been submitted yet. Go to the Student page and submit some feedback first.")
+    st.markdown("""
+    <div style='text-align: center; padding: 3rem 1rem; background-color: #2a2a2a; border-radius: 12px; border: 2px dashed #F76900;'>
+        <div style='font-size: 3rem;'>📭</div>
+        <div style='color: white; font-size: 1.3rem; font-weight: bold; margin-top: 0.5rem;'>No feedback yet</div>
+        <div style='color: #ccc; margin-top: 0.5rem;'>Head to the Student page to submit anonymous feedback, then come back here to see AI-clustered themes.</div>
+    </div>
+    """, unsafe_allow_html=True)
     st.stop()
 
 col1, col2, col3 = st.columns([2, 1, 1])
@@ -63,7 +69,12 @@ with col3:
 feedback = get_feedback_for_course(selected_course, cycle=selected_cycle)
 
 if not feedback:
-    st.info(f"No feedback yet for {selected_course} in Cycle {selected_cycle}. Try a different cycle or wait for submissions.")
+    st.markdown(f"""
+    <div style='text-align: center; padding: 2rem; background-color: #2a2a2a; border-radius: 8px; margin-top: 1rem;'>
+        <div style='color: white; font-size: 1.1rem;'>No feedback yet for <b style='color: #F76900;'>{selected_course}</b> in Cycle {selected_cycle}</div>
+        <div style='color: #ccc; margin-top: 0.5rem;'>Try a different cycle or wait for student submissions.</div>
+    </div>
+    """, unsafe_allow_html=True)
     st.stop()
 
 st.markdown(f"### {selected_course} — Cycle {selected_cycle}")

@@ -42,8 +42,14 @@ with st.form("feedback_form", clear_on_submit=True):
             st.error("Feedback too short — please write at least 10 characters")
         else:
             save_feedback(course_code, feedback_text, cycle)
-            st.success("✅ Feedback submitted anonymously. Thank you!")
             st.balloons()
+            st.markdown("""
+            <div style='text-align: center; padding: 2rem; background: linear-gradient(135deg, #1a5a2a 0%, #2ecc71 100%); border-radius: 12px; margin: 1rem 0;'>
+                <div style='font-size: 2.5rem;'>✅</div>
+                <div style='color: white; font-size: 1.3rem; font-weight: bold; margin-top: 0.5rem;'>Feedback submitted anonymously</div>
+                <div style='color: #e0f5e6; margin-top: 0.5rem;'>Thank you for helping improve your course. Your voice matters.</div>
+            </div>
+            """, unsafe_allow_html=True)
 
 st.markdown("---")
 st.info("💡 Your feedback will be grouped with others' and shown to your professor as anonymous themes — never as individual quotes traceable to you.")

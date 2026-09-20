@@ -39,7 +39,18 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown('<p class="main-header">🍊 OrangeVoice</p>', unsafe_allow_html=True)
-st.markdown('<p class="tagline">Anonymous mid-semester feedback that closes the loop</p>', unsafe_allow_html=True)
+st.markdown('<p class="tagline">Anonymous mid-semester feedback that closes the loop between students, professors, and deans.</p>', unsafe_allow_html=True)
+
+# Trust indicators row
+col1, col2, col3, col4 = st.columns(4)
+with col1:
+    st.markdown("<div style='text-align: center; color: #F76900; font-size: 1.5rem; font-weight: bold;'>🔒</div><div style='text-align: center; color: #888; font-size: 0.85rem;'>Zero login</div>", unsafe_allow_html=True)
+with col2:
+    st.markdown("<div style='text-align: center; color: #F76900; font-size: 1.5rem; font-weight: bold;'>🤖</div><div style='text-align: center; color: #888; font-size: 0.85rem;'>AI-powered</div>", unsafe_allow_html=True)
+with col3:
+    st.markdown("<div style='text-align: center; color: #F76900; font-size: 1.5rem; font-weight: bold;'>🔄</div><div style='text-align: center; color: #888; font-size: 0.85rem;'>2-cycle fair</div>", unsafe_allow_html=True)
+with col4:
+    st.markdown("<div style='text-align: center; color: #F76900; font-size: 1.5rem; font-weight: bold;'>📊</div><div style='text-align: center; color: #888; font-size: 0.85rem;'>3-role dashboard</div>", unsafe_allow_html=True)
 
 st.markdown("---")
 
@@ -67,3 +78,14 @@ with col3:
 
 st.markdown("---")
 st.caption("🔒 100% anonymous — no student login, no identity stored. Ever.")
+
+# Footer
+st.markdown("---")
+col1, col2, col3 = st.columns(3)
+with col2:
+    st.markdown("""
+    <div style='text-align: center; color: #666; font-size: 0.75rem; padding-top: 1rem;'>
+    Built with 🍊 for Syracuse University · CuseHacks 2026<br>
+    <a href='https://github.com/Abhishek-13072001/cusehacks' style='color: #F76900; text-decoration: none;'>View on GitHub</a>
+    </div>
+    """, unsafe_allow_html=True)
