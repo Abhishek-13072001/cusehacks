@@ -105,9 +105,10 @@ with st.sidebar:
     st.markdown("### Filters")
     min_sample = st.number_input("Minimum sample size for alerts", value=5, min_value=1)
     st.markdown("### Alert Thresholds (% negative)")
-    yellow_pct = st.slider("Yellow", 5, 30, 10)
-    orange_pct = st.slider("Orange", 15, 40, 20)
-    red_pct = st.slider("Red", 25, 50, 30)
+    st.caption("Set the % of negative feedback that triggers each alert level. Higher = more tolerant, lower = more sensitive.")
+    yellow_pct = st.slider("⚡ Yellow (Caution)", 5, 30, 10, help="Sustained negative feedback across 2 cycles")
+    orange_pct = st.slider("⚠️ Orange (Warning)", 15, 40, 20, help="Negative feedback + no improvement")
+    red_pct = st.slider("🚨 Red (Critical)", 25, 50, 30, help="2 consecutive cycles above this % → dean alerted")
     enrolled_default = st.number_input("Default enrollment per course", value=30, min_value=1)
 
 # ============ MAIN CONTENT ============
@@ -217,11 +218,11 @@ course_data.sort(key=lambda x: alert_priority.get(x["alert"], 9))
 # Display summary metrics at top
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    red_count = sum(1 for c in course_data if c["alert"] == "red")
-    st.metric("🔴 Critical Alerts", red_count)
+    with st.container(border=True):
+        st.markdown("<h3 style='text-align: center; color: white; margin-bottom: 1rem;'>Impact Score</h3>", unsafe_allow_html=True)
 with col2:
-    orange_count = sum(1 for c in course_data if c["alert"] == "orange")
-    st.metric("🟠 Warnings", orange_count)
+    with st.container(border=True):
+        st.markdown("<h3 style='text-align: center; color: white; margin-bottom: 1rem;'>Sentiment Breakdown</h3>", unsafe_allow_html=True)
 with col3:
     improved_count = sum(1 for c in course_data if c["alert"] == "improved")
     st.metric("✅ Improved Courses", improved_count)
