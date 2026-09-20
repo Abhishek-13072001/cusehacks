@@ -14,31 +14,47 @@ st.markdown("""
         font-weight: bold;
     }
     .alert-red {
-        background-color: #4a1a1a;
+        background-color: #7a1a1a;
+        color: #ffffff !important;
         border-left: 5px solid #e74c3c;
         padding: 1rem;
         border-radius: 8px;
         margin-bottom: 1rem;
     }
+    .alert-red h4, .alert-red b, .alert-red p {
+        color: #ffffff !important;
+    }
     .alert-yellow {
-        background-color: #4a3d1a;
+        background-color: #7a5a1a;
+        color: #ffffff !important;
         border-left: 5px solid #f39c12;
         padding: 1rem;
         border-radius: 8px;
         margin-bottom: 1rem;
     }
+    .alert-yellow h4, .alert-yellow b, .alert-yellow p {
+        color: #ffffff !important;
+    }
     .alert-green {
-        background-color: #1a4a2a;
+        background-color: #1a5a2a;
+        color: #ffffff !important;
         border-left: 5px solid #2ecc71;
         padding: 1rem;
         border-radius: 8px;
         margin-bottom: 1rem;
     }
+    .alert-green h4, .alert-green b, .alert-green p {
+        color: #ffffff !important;
+    }
     .course-card {
-        background-color: #1a1a1a;
+        background-color: #2a2a2a;
+        color: #ffffff !important;
         padding: 1rem;
         border-radius: 8px;
         margin-bottom: 0.5rem;
+    }
+    .course-card h4, .course-card b, .course-card p {
+        color: #ffffff !important;
     }
 </style>
 """, unsafe_allow_html=True)

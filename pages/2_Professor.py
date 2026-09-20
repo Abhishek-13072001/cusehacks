@@ -24,11 +24,15 @@ st.markdown("""
         text-align: center;
     }
     .theme-box {
-        background-color: #1a1a1a;
+        background-color: #2a2a2a;
+        color: #ffffff !important;
         padding: 1rem;
         border-radius: 8px;
         margin-bottom: 0.5rem;
         border-left: 4px solid #F76900;
+    }
+    .theme-box b, .theme-box i {
+        color: #ffffff !important;
     }
 </style>
 """, unsafe_allow_html=True)
