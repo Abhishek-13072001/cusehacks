@@ -7,7 +7,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# SU Orange theme
 st.markdown("""
 <style>
     .main-header {
@@ -24,6 +23,33 @@ st.markdown("""
         font-size: 1.3rem;
         margin-top: 0;
         margin-bottom: 2rem;
+    }
+    .section-header {
+        text-align: center;
+        color: white;
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin: 1.5rem 0 1.5rem 0;
+    }
+    .role-title {
+        text-align: center;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+    .role-desc {
+        text-align: center;
+        color: #bbb;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        min-height: 3rem;
+    }
+    .sso-caption {
+        text-align: center;
+        color: #888;
+        font-size: 0.95rem;
+        padding: 0.5rem;
     }
     .stButton>button {
         background-color: #F76900;
@@ -45,7 +71,7 @@ st.markdown('<p class="tagline">Anonymous mid-semester feedback that closes the 
 # Trust indicators row
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-   st.markdown("<div style='text-align: center; color: #F76900; font-size: 1.5rem; font-weight: bold;'>🔒</div><div style='text-align: center; color: #888; font-size: 0.85rem;'>SSO verified,<br>zero stored identity</div>", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: center; color: #F76900; font-size: 1.5rem; font-weight: bold;'>🔒</div><div style='text-align: center; color: #888; font-size: 0.85rem;'>SSO verified,<br>zero stored identity</div>", unsafe_allow_html=True)
 with col2:
     st.markdown("<div style='text-align: center; color: #F76900; font-size: 1.5rem; font-weight: bold;'>🤖</div><div style='text-align: center; color: #888; font-size: 0.85rem;'>AI-powered</div>", unsafe_allow_html=True)
 with col3:
@@ -55,30 +81,30 @@ with col4:
 
 st.markdown("---")
 
-st.markdown("### Choose your role")
+st.markdown('<p class="section-header">Choose your role</p>', unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.markdown("#### 🎓 Student")
-    st.write("Share anonymous feedback about your courses")
+    st.markdown('<p class="role-title">🎓 Student</p>', unsafe_allow_html=True)
+    st.markdown('<p class="role-desc">Share anonymous feedback about your courses</p>', unsafe_allow_html=True)
     if st.button("Enter as Student", key="student_btn", use_container_width=True):
         st.switch_page("pages/1_Student.py")
 
 with col2:
-    st.markdown("#### 👨‍🏫 Professor")
-    st.write("View AI-clustered feedback for your courses")
+    st.markdown('<p class="role-title">👨‍🏫 Professor</p>', unsafe_allow_html=True)
+    st.markdown('<p class="role-desc">View AI-clustered feedback for your courses</p>', unsafe_allow_html=True)
     if st.button("Enter as Professor", key="prof_btn", use_container_width=True):
         st.switch_page("pages/2_Professor.py")
 
 with col3:
-    st.markdown("#### 🏛️ Dean")
-    st.write("Monitor course health across departments")
+    st.markdown('<p class="role-title">🏛️ Dean</p>', unsafe_allow_html=True)
+    st.markdown('<p class="role-desc">Monitor course health across departments</p>', unsafe_allow_html=True)
     if st.button("Enter as Dean", key="dean_btn", use_container_width=True):
         st.switch_page("pages/3_Dean.py")
 
 st.markdown("---")
-st.caption("🔒 Verified via SU Blackboard SSO · No student identity stored with feedback · Enrollment checked, anonymity preserved")
+st.markdown('<p class="sso-caption">🔒 Verified via SU Blackboard SSO · No student identity stored with feedback · Enrollment checked, anonymity preserved</p>', unsafe_allow_html=True)
 
 # Footer
 st.markdown("---")
