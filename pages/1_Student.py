@@ -1,0 +1,49 @@
+import streamlit as st
+from utils.storage import save_feedback
+
+st.set_page_config(page_title="OrangeVoice - Student", page_icon="🎓", layout="centered")
+
+st.markdown("# 🎓 Student Feedback")
+st.caption("100% anonymous. No login. No tracking. No stored identity.")
+
+if st.button("← Back to Home"):
+    st.switch_page("app.py")
+
+st.markdown("---")
+
+with st.form("feedback_form", clear_on_submit=True):
+    course_code = st.text_input(
+        "Course Code",
+        placeholder="e.g., IST 615",
+        help="Enter the course code you want to give feedback for"
+    )
+    
+    feedback_text = st.text_area(
+        "Your Feedback",
+        placeholder="What's working? What needs improvement? Be constructive — your professor will read this.",
+        height=200
+    )
+    
+    cycle = st.selectbox(
+        "Feedback Cycle (Week)",
+        options=[1, 2, 3, 4, 5, 6, 7, 8],
+        index=0,
+        help="Which feedback cycle is this for?"
+    )
+    
+    submitted = st.form_submit_button("Submit Anonymously", use_container_width=True)
+    
+    if submitted:
+        if not course_code.strip():
+            st.error("Please enter a course code")
+        elif not feedback_text.strip():
+            st.error("Please write some feedback")
+        elif len(feedback_text.strip()) < 10:
+            st.error("Feedback too short — please write at least 10 characters")
+        else:
+            save_feedback(course_code, feedback_text, cycle)
+            st.success("✅ Feedback submitted anonymously. Thank you!")
+            st.balloons()
+
+st.markdown("---")
+st.info("💡 Your feedback will be grouped with others' and shown to your professor as anonymous themes — never as individual quotes traceable to you.")

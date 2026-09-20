@@ -1,0 +1,6 @@
+cusevenv/
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+.env
+.vscode/
