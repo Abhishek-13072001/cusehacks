@@ -9,9 +9,17 @@ st.set_page_config(page_title="OrangeVoice - Professor", page_icon="👨‍🏫"
 st.markdown("""
 <style>
     .main-header {
-        color: #F76900;
-        font-size: 2.5rem;
-        font-weight: bold;
+    color: #F76900;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    }
+    .page-caption {
+        text-align: center;
+        color: #888;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
     }
     .score-big {
         font-size: 4rem;

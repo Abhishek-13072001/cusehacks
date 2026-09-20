@@ -12,15 +12,16 @@ st.markdown("""
 <style>
     .main-header {
         color: #F76900;
-        font-size: 3rem;
+        font-size: 5rem;
         font-weight: bold;
         text-align: center;
-        margin-bottom: 0;
+        margin-bottom: 0.5rem;
+        line-height: 1.1;
     }
     .tagline {
-        color: #666;
+        color: #ccc;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin-top: 0;
         margin-bottom: 2rem;
     }

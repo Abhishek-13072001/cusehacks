@@ -3,8 +3,26 @@ from utils.storage import save_feedback
 
 st.set_page_config(page_title="OrangeVoice - Student", page_icon="🎓", layout="centered")
 
-st.markdown("# 🎓 Student Feedback")
-st.caption("Verified via SU Blackboard SSO. Your feedback is stored anonymously — no identifier ever linked to it.")
+st.markdown("""
+<style>
+    .main-header {
+        color: #F76900;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    .page-caption {
+        text-align: center;
+        color: #888;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown('<p class="main-header">🎓 Student Feedback</p>', unsafe_allow_html=True)
+st.markdown('<p class="page-caption">Verified via SU Blackboard SSO. Your feedback is stored anonymously — no identifier ever linked to it.</p>', unsafe_allow_html=True)
 
 if st.button("← Back to Home"):
     st.switch_page("app.py")

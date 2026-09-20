@@ -10,8 +10,16 @@ st.markdown("""
 <style>
     .main-header {
         color: #F76900;
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: bold;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    .page-caption {
+        text-align: center;
+        color: #888;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
     }
     .alert-red {
         background-color: #7a1a1a;
@@ -60,7 +68,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown('<p class="main-header">🏛️ Dean Dashboard</p>', unsafe_allow_html=True)
-st.caption("Cross-course visibility across your department. Alerts trigger only after 2-cycle escalation.")
+st.markdown('<p class="page-caption">Cross-course visibility across your department. Alerts trigger only after 2-cycle escalation.</p>', unsafe_allow_html=True)
 
 if st.button("← Back to Home"):
     st.switch_page("app.py")
