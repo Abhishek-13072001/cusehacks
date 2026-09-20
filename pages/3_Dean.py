@@ -67,15 +67,33 @@ if st.button("← Back to Home"):
 
 st.markdown("---")
 
-# Load all courses
-courses = get_all_courses()
-
-if not courses:
-    st.warning("📭 No feedback data yet across any course.")
-    st.stop()
-
-# Sidebar filters
+# ============ SIDEBAR (Demo Controls + Filters) ============
 with st.sidebar:
+    # Demo reset safety net
+    st.markdown("### 🛠️ Demo Controls")
+    if st.button("🔄 Reset Demo Data", help="Restore seed data if something breaks", use_container_width=True):
+        try:
+            import subprocess
+            import sys
+            result = subprocess.run(
+                [sys.executable, "seed_data.py"],
+                capture_output=True,
+                text=True,
+                timeout=15,
+                cwd="."
+            )
+            if result.returncode == 0:
+                st.success("✅ Demo data reset!")
+                st.cache_data.clear()
+                st.rerun()
+            else:
+                st.error(f"Reset failed: {result.stderr[:200]}")
+        except Exception as e:
+            st.error(f"Error: {str(e)[:200]}")
+    st.caption("💡 Restores seed data if needed during demo")
+    st.markdown("---")
+
+    # Filters
     st.markdown("### Filters")
     min_sample = st.number_input("Minimum sample size for alerts", value=5, min_value=1)
     st.markdown("### Alert Thresholds (% negative)")
@@ -83,6 +101,14 @@ with st.sidebar:
     orange_pct = st.slider("Orange", 15, 40, 20)
     red_pct = st.slider("Red", 25, 50, 30)
     enrolled_default = st.number_input("Default enrollment per course", value=30, min_value=1)
+
+# ============ MAIN CONTENT ============
+# Load all courses
+courses = get_all_courses()
+
+if not courses:
+    st.warning("📭 No feedback data yet across any course.")
+    st.stop()
 
 # Analyze each course across cycles
 st.markdown("### 📊 Department Overview")
