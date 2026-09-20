@@ -112,7 +112,7 @@ col1, col2 = st.columns([1, 2])
 
 with col1:
     with st.container(border=True):
-        st.markdown('<p class="section-title-centered">Impact Score</p>', unsafe_allow_html=True)
+        st.markdown("<h3 style='text-align: center; color: white; margin-bottom: 1rem;'>Impact Score</h3>", unsafe_allow_html=True)
         score = analysis["impact_score"]
         color = score_color(score)
         label = score_label(score)
@@ -122,7 +122,7 @@ with col1:
 
 with col2:
     with st.container(border=True):
-        st.markdown('<p class="section-title-centered">Sentiment Breakdown</p>', unsafe_allow_html=True)
+        st.markdown("<h3 style='text-align: center; color: white; margin-bottom: 1rem;'>Sentiment Breakdown</h3>", unsafe_allow_html=True)
         sentiment = analysis["sentiment"]
         fig = go.Figure(data=[go.Bar(
             x=["Positive", "Neutral", "Negative"],

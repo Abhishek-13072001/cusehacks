@@ -218,11 +218,11 @@ course_data.sort(key=lambda x: alert_priority.get(x["alert"], 9))
 # Display summary metrics at top
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    with st.container(border=True):
-        st.markdown("<h3 style='text-align: center; color: white; margin-bottom: 1rem;'>Impact Score</h3>", unsafe_allow_html=True)
+    red_count = sum(1 for c in course_data if c["alert"] == "red")
+    st.metric("🔴 Critical Alerts", red_count)
 with col2:
-    with st.container(border=True):
-        st.markdown("<h3 style='text-align: center; color: white; margin-bottom: 1rem;'>Sentiment Breakdown</h3>", unsafe_allow_html=True)
+    orange_count = sum(1 for c in course_data if c["alert"] == "orange")
+    st.metric("🟠 Warnings", orange_count)
 with col3:
     improved_count = sum(1 for c in course_data if c["alert"] == "improved")
     st.metric("✅ Improved Courses", improved_count)
