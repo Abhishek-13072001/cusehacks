@@ -3,182 +3,182 @@
     "course": "IST 615",
     "feedback": "Azure lab setup was really confusing, I could not finish the setup steps",
     "cycle": 1,
-    "timestamp": "2026-09-19T19:42:22.644477",
+    "timestamp": "2026-09-12T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 615",
-    "feedback": "Azure walkthrough was too fast, got lost",
+    "feedback": "Azure walkthrough was too fast, got lost during the demo",
     "cycle": 1,
-    "timestamp": "2026-09-19T19:46:33.481345",
+    "timestamp": "2026-09-12T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 615",
-    "feedback": "Lecture on VMs was excellent, very clear",
+    "feedback": "Lecture on VMs was excellent, very clear examples",
     "cycle": 1,
-    "timestamp": "2026-09-19T19:46:53.159262",
+    "timestamp": "2026-09-12T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 615",
     "feedback": "Assignment instructions were clear and helpful",
     "cycle": 1,
-    "timestamp": "2026-09-19T19:47:44.227852",
+    "timestamp": "2026-09-12T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 615",
-    "feedback": "I couldn't set up Azure quotas, no help was given",
+    "feedback": "I could not set up Azure quotas, no help was given",
     "cycle": 1,
-    "timestamp": "2026-09-19T19:47:54.177054",
+    "timestamp": "2026-09-12T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 615",
     "feedback": "Professor explains cloud concepts really well",
     "cycle": 1,
-    "timestamp": "2026-09-19T19:48:03.065047",
+    "timestamp": "2026-09-12T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 615",
     "feedback": "Wish there was a setup video for Azure environment",
     "cycle": 1,
-    "timestamp": "2026-09-19T19:48:13.245554",
+    "timestamp": "2026-09-12T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 615",
-    "feedback": "Azure setup is still really confusing after professor talked about it",
+    "feedback": "Azure setup is still really confusing even after professor talked about it in class",
     "cycle": 2,
-    "timestamp": "2026-09-19T19:53:27.874296",
+    "timestamp": "2026-09-19T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 615",
-    "feedback": "The lab still doesn't work for me",
+    "feedback": "The lab still does not work for me, no changes felt",
     "cycle": 2,
-    "timestamp": "2026-09-19T19:53:42.773566",
+    "timestamp": "2026-09-19T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 615",
-    "feedback": "I'm still lost on Azure quotas",
+    "feedback": "I am still lost on Azure quotas, no help received",
     "cycle": 2,
-    "timestamp": "2026-09-19T19:53:53.689202",
+    "timestamp": "2026-09-19T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 615",
-    "feedback": "No improvement, still can't finish the lab",
+    "feedback": "No improvement at all, still cannot finish the lab",
     "cycle": 2,
-    "timestamp": "2026-09-19T19:54:03.558148",
+    "timestamp": "2026-09-19T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 615",
-    "feedback": "Getting more frustrated with Azure",
+    "feedback": "Getting even more frustrated with Azure setup",
     "cycle": 2,
-    "timestamp": "2026-09-19T19:54:13.689755",
+    "timestamp": "2026-09-19T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 615",
-    "feedback": "The pace didn't slow down at all",
+    "feedback": "The pace did not slow down at all, still too fast",
     "cycle": 2,
-    "timestamp": "2026-09-19T19:54:21.776174",
+    "timestamp": "2026-09-19T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 688",
     "feedback": "Streamlit lab was confusing at start",
     "cycle": 1,
-    "timestamp": "2026-09-19T19:55:57.660738",
+    "timestamp": "2026-09-12T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 688",
     "feedback": "RAG concepts moved too fast",
     "cycle": 1,
-    "timestamp": "2026-09-19T19:56:05.501921",
+    "timestamp": "2026-09-12T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 688",
     "feedback": "Not clear how to use ChromaDB",
     "cycle": 1,
-    "timestamp": "2026-09-19T19:56:18.698327",
+    "timestamp": "2026-09-12T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 688",
     "feedback": "Good discussion sessions helped",
     "cycle": 1,
-    "timestamp": "2026-09-19T19:56:30.358094",
+    "timestamp": "2026-09-12T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 688",
     "feedback": "Assignment 2 was well-structured",
     "cycle": 1,
-    "timestamp": "2026-09-19T19:56:36.868110",
+    "timestamp": "2026-09-12T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 688",
     "feedback": "Professor is knowledgeable but rushed",
     "cycle": 1,
-    "timestamp": "2026-09-19T19:56:44.462913",
+    "timestamp": "2026-09-12T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 688",
     "feedback": "RAG walkthrough this week really helped clarify things",
     "cycle": 2,
-    "timestamp": "2026-09-19T19:56:58.594388",
+    "timestamp": "2026-09-19T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 688",
     "feedback": "ChromaDB tutorial was clear and effective",
     "cycle": 2,
-    "timestamp": "2026-09-19T19:57:47.656758",
+    "timestamp": "2026-09-19T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 688",
     "feedback": "Loving the new pace of lectures",
     "cycle": 2,
-    "timestamp": "2026-09-19T19:57:57.488103",
+    "timestamp": "2026-09-19T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 688",
     "feedback": "Professor addressed our concerns well",
     "cycle": 2,
-    "timestamp": "2026-09-19T19:58:06.915473",
-    "addressed": false
-  },
-  {
-    "course": "IST 688",
-    "feedback": "Professor addressed our concerns well",
-    "cycle": 2,
-    "timestamp": "2026-09-19T19:58:14.876395",
+    "timestamp": "2026-09-19T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 688",
     "feedback": "Great class this week, everything makes sense now",
     "cycle": 2,
-    "timestamp": "2026-09-19T19:58:25.411532",
+    "timestamp": "2026-09-19T20:19:13.408380",
     "addressed": false
   },
   {
     "course": "IST 688",
     "feedback": "Streamlit lab was much better after the walkthrough",
     "cycle": 2,
-    "timestamp": "2026-09-19T19:58:34.696027",
+    "timestamp": "2026-09-19T20:19:13.408380",
+    "addressed": false
+  },
+  {
+    "course": "IST 688",
+    "feedback": "Really appreciate the extra effort to help us learn",
+    "cycle": 2,
+    "timestamp": "2026-09-19T20:19:13.408380",
     "addressed": false
   }
 ]
